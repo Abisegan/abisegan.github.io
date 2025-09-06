@@ -1,0 +1,111 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background: #f4f4f9;
+  color: #333;
+}
+
+/* Navbar */
+header {
+  background: #111;
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo { color: #fff; font-size: 1.5rem; }
+
+.nav-links { list-style: none; display: flex; }
+.nav-links li { margin-left: 20px; }
+.nav-links a { color: #fff; text-decoration: none; transition: 0.3s; }
+.nav-links a:hover { color: #00adb5; }
+
+/* Hero */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('https://source.unsplash.com/1600x900/?technology,computer') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-text h2 { font-size: 2.5rem; }
+.hero-text span { color: #00adb5; }
+.typing { font-size: 1.3rem; margin: 1rem 0; }
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background: #00adb5;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.btn:hover { background: #007a7a; }
+
+/* Sections */
+section {
+  padding: 6rem 2rem;
+  text-align: center;
+}
+section h2 { margin-bottom: 1.5rem; font-size: 2rem; color: #222; }
+
+/* Skills */
+.skills-grid img {
+  max-width: 100%;
+  margin-top: 1rem;
+}
+
+/* Projects */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.project-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.project-card h3 { color: #00adb5; }
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #00adb5;
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
