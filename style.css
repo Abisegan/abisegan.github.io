@@ -57,7 +57,7 @@ nav {
   text-align: center; color: #fff; padding: 2rem 1rem;
   background:
     linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url('bg-hero.avif') center/cover no-repeat;
+    url('bg-hero.jpg') center/cover no-repeat;
 }
 
 .hero-content { display: flex; flex-direction: column; align-items: center; gap: 14px; }
