@@ -1,3 +1,23 @@
+/* Typing Effect */
+.typing {
+  color: #00adb5;
+  font-weight: bold;
+  border-right: 2px solid #00adb5;
+  padding-right: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { border-color: transparent; }
+  51%, 100% { border-color: #00adb5; }
+}
+
+
+
+
 /* GitHub Stats Section */
 .github-stats {
   display: flex;
