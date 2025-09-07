@@ -73,6 +73,7 @@ nav {
 .hero-text span { color: var(--brand); }
 
 .typing {
+  font-size: 1.3rem;  
   color: var(--brand); font-weight: 700;
   border-right: 2px solid var(--brand);
   padding-right: 5px; white-space: nowrap; overflow: hidden; display: inline-block;
@@ -174,3 +175,16 @@ footer {
   .profile-pic { width: 120px; height: 120px; }
   .nav-links { gap: 10px; flex-wrap: wrap; }
 }
+
+
+
+.hero-text p {
+  font-size: 1.3rem;   /* match typing font-size */
+  font-weight: 600;    /* make it bold enough to match */
+  color: #fff;         /* keep it neutral so typing text color pops */
+  display: inline-flex;
+  align-items: center; /* align baseline properly */
+  gap: 6px;            /* small spacing between "I am" and typing text */
+  margin: 1rem 0;
+}
+
